@@ -1,0 +1,170 @@
+
+    <html>
+    <head>
+   	    <TITLE>Tugas Akhir Iis Sudianto</TITLE>
+
+<style type="text/css">
+body {
+background-color:black;
+background-image:url(jkt48.jpg);
+}
+
+</style>
+  </head>
+
+   <body id="abc">
+   
+    <script type="text/javascript" id="abc">
+<!--
+    function Delika()
+      {
+ 		
+     var a=document.getElementById("abc").innerHTML;
+     
+	var nama = document.getElementById("ina").value;
+	    
+ 	var tujuan = document.getElementById("itu").value;
+ 	var kelas = document.getElementById("ikel").value;
+	var jumlah = parseFloat(document.input.ijml.value);
+	    
+   	var ht = 0.0;
+ 	var st = 0.0;
+ 	var disc = 0.0;
+ 	var tb = 0.0;
+
+    if ((tujuan=="Jakarta")&&(kelas=="Eksekutif"))
+ 	  {ht =1900000;}
+ 	else if ((tujuan=="Jakarta")&&(kelas=="Bisnis"))
+ 	  {ht =1200000;}
+ 	else if ((tujuan=="Jakarta")&&(kelas=="Ekonomi"))
+ 	  {ht =900000;}
+	else if ((tujuan=="Medan")&&(kelas=="Eksekutif"))
+ 	  {ht =1500000;}
+	else if ((tujuan=="Medan")&&(kelas=="Bisnis"))
+ 	  {ht =900000;}
+	else if ((tujuan=="Medan")&&(kelas=="Ekonomi"))
+ 	  {ht =700000;}
+	else if ((tujuan=="Banjarmasin")&&(kelas=="Eksekutif"))
+ 	  {ht =1200000;}
+	else if ((tujuan=="Banjarmasin")&&(kelas=="Bisnis"))
+ 	  {ht =800000;}
+	else
+ 	  {ht=600000;}
+ 	
+	st = jumlah*ht;
+
+ 	if (document.input.ime.checked==true)
+ 	  {ket="YA"; disc = st*10/100;}
+	else
+      {ket="TIDAK"; disc=0.0;}
+
+tb=st-disc;
+ 	 	
+	 
+	 
+	 document.input.otiket.value=ht;
+ 	 document.input.ost.value=st;
+ 	 document.input.odisc.value=disc;
+ 	 document.input.otb.value=tb;
+	 
+     document.write(a);
+	 
+	 document.write("<table border='1' color='pink' align='center'>");
+  	 document.write ("<tr>");
+	 document.write("<td width='100' align='center'>"+nama+"</td>");
+	 document.write("<td width='100' align='center'>"+tujuan+"</td>");
+	 document.write("<td width='100' align='center'>"+kelas+"</td>");
+	 document.write("<td width='100' align='center'>"+jumlah+"</td>");
+	 document.write("<td width='100' align='center'>"+ket+"</td>");
+	 document.write("<td width='100' align='center'>"+ht+"</td>");
+	 document.write("<td width='100' align='center'>"+st+"</td>");
+	 document.write("<td width='100' align='center'>"+disc+"</td>");
+	 document.write("<td width='100' align='center'>"+tb+"</td>");
+	 document.write ("</tr>");
+	 document.write ("</table>");	
+	 // gunakan untuk mengecek !!! alert (total);
+	  }
+	//-->
+	  
+</SCRIPT>
+
+<center><h2>FORM PEMESANAN TIKET</h2></center>
+<FORM name="input">
+<table border="3" bordercolor="black" bgcolor="SandyBrown" align="center">
+<tr>
+<td colspan="5">
+     <h3 align="center">KAO AIR</h3></td>
+</tr>
+<tr>
+
+<td>Nama</td>
+<td><input type="text" id="ina" size="20" name="ina" width="100"></td>
+<td>Harga Tiket</td>
+<td><input type="text" size="10" id="otiket" name="otiket" width="100"></td>
+</tr>
+       
+<tr>
+<td>Tujuan</td>
+<td><select name="itu" id="itu" size=1>
+	<option value="Jakarta">Jakarta</option>
+	<option value="Medan">Medan</option>
+	<option value="Banjarmasin">Banjarmasin
+	</option></select></td>
+<td>Sub Total</td>
+<td><input type="text" size="10" id="ost" name="osub" width="100"></td>
+</tr>
+<tr>
+<td>Kelas</td>
+<td> <select name="ikel" id="ikel" size=1>
+	<option value="Eksekutif">Eksekutif</option>
+	<option value="Bisnis">Bisnis</option>
+	<option value="Ekonomi">Ekonomi
+	</option></select></td>
+<td>Diskon</td>
+<td><input type="text" size="10" id="odisc" name="odisc" width="100"></td>
+</tr>
+<tr><td>Jumlah Tiket</td>
+<td> <input type="text" id="ijml" size="11" name="ijml" width="100"></td>
+<td>Total Bayar</td>
+<td> <input type="text" size="10" id="otb" name="otb" width="100"></td>
+</tr>
+<tr>
+<td>Member</td>
+<td><input type="checkbox" id="ime" name="ime" width="100">Ya</td>
+<td colspan="3"><img border="0" height="50" width="200" src="kao.jpg"/></td>
+</tr>
+
+
+<tr>
+<td colspan="2" align="right"> <input type="button" value="hitung" onClick="Delika()"></td>
+<td colspan="2"	align="left">  <input type="reset" value="reset"></td>
+	</tr>
+</table>
+</FORM>
+<br>
+
+
+<center><h2>DATA PEMESAN TIKET</h2></center>
+<style type="text/css">
+body {
+background-color:black;
+background-image:url(jkt48.jpg);
+}
+
+</style>
+<table border="3" align="center">
+<tr> 
+     <td align=center width='100'><b>Nama</b></td>
+     <td align=center width='100'><b>Tujuan</b></td>
+     <td align=center width='100'><b>Kelas</b></td>
+     <td align=center width='100'><b>Jumlah</b></td>
+     <td align=center width='100'><b>Member</b></td>
+     <td align=center width='100'><b>Harga Tiket</b></td>
+     <td align=center width='100'><b>Sub Total</b></td>
+     <td align=center width='100'><b>Diskon</b></td>
+     <td align=center width='100'><b>Total</b></td>
+</tr>
+     </table>
+     </font>
+     </body>
+</html>
